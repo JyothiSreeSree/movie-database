@@ -1,0 +1,68 @@
+.movieCardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  padding: 20px;
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease;
+}
+
+.movieCardContainer:hover {
+  box-shadow: 3px 0px 15px 6px rgba(0, 0, 0, 0.2);
+}
+
+.movieCardImage {
+  width: 200px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.movieDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.movieTitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.movieRating {
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 5px;
+}
+
+.viewDetailsLink {
+  margin-top: auto;
+  width: 100%;
+}
+
+.viewDetailsButton {
+  background-color: #8b1c15;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.viewDetailsButton:hover {
+  background-color: #a02d22;
+}
+
+@media screen and (max-width: 1200px) {
+  .movieCardContainer {
+    flex-grow: 1;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .viewDetailsButton {
+    align-self: center;
+  }
+}

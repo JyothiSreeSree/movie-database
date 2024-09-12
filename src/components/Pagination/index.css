@@ -1,0 +1,37 @@
+.paginationContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.controlBtn {
+  background-color: #032541;
+  color: #ffffff;
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  margin: 0 8px;
+}
+
+.controlBtn:hover {
+  background-color: #e1e1e1;
+  color: #032541;
+}
+
+.pageNo {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #032541;
+  margin: 0;
+}
+
+@media screen and (max-width: 425px) {
+  .paginationContainer {
+    flex-direction: column;
+  }
+
+  .controlBtn {
+    margin: 8px 0;
+  }
+}

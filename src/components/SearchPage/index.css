@@ -1,0 +1,35 @@
+.emptyViewContainer {
+  text-align: center;
+  padding: 20px;
+}
+
+.movieListContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+  margin: 16px 0;
+}
+
+.loaderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.routePageBody {
+  padding: 16px;
+}
+
+@media screen and (max-width: 425px) {
+  .movieListContainer {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 8px;
+  }
+
+  .routePageBody {
+    padding: 8px;
+  }
+}
